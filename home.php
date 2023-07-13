@@ -133,8 +133,36 @@
 			<center><h2><legend>Featured Items</legend></h2></center>
 			<br />
 
-			
-			
+			<?php
+
+				$query = $conn->query("SELECT *FROM product WHERE category='feature' ORDER BY product_id DESC") or die (mysqli_error());
+
+					while($fetch = $query->fetch_array())
+						{
+
+						$pid = $fetch['product_id'];
+
+						$query1 = $conn->query("SELECT * FROM stock WHERE product_id = '$pid'") or die (mysqli_error());
+						$rows = $query1->fetch_array();
+
+						$qty = $rows['qty'];
+						if($qty <= 5){
+
+						}else{
+							echo "<div class='float'>";
+							echo "<center>";
+							echo "<a href='details.php?id=".$fetch['product_id']."'><img class='img-polaroid' src='photo/".$fetch['product_image']."' height = '300px' width = '300px'></a>";
+							echo "".$fetch['product_name']."";
+							echo "<br />";
+							echo "P ".$fetch['product_price']."";
+							echo "<br />";
+							echo "<h3 class='text-info' style='position:absolute; margin-top:-90px; text-indent:15px;'> Size: ".$fetch['product_size']."</h3>";
+							echo "</center>";
+							echo "</div>";
+						}
+
+						}
+			?>
 		</div>
 
 
