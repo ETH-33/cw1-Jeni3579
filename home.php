@@ -174,7 +174,7 @@
 	<br />
 	<div id="footer">
 		<div class="foot">
-			<label style="font-size:17px;"> Copyrights &copy; </label>
+			<label style="font-size:17px;"> By Jeni Kadariya </label>
 			
 		</div>
 
