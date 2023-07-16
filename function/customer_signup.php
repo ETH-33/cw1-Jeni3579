@@ -24,7 +24,8 @@
 				{
 					$conn->query ("INSERT INTO customer (firstname, mi, lastname, address, country, zipcode, mobile, telephone, email, password)
 					VALUES ('$firstname', '$mi', '$lastname', '$address', '$country', '$zipcode', '$mobile', '$telephone', '$email', '$password')") 
-					or die(mysqli_error());	
+					or die(mysqli_error($conn));
+	
 				}				
 					
 }

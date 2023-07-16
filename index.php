@@ -61,12 +61,12 @@
 						<center>
 					<form method="post">
 						<input type="text" name="firstname" placeholder="Firstname" required>
-						<input type="text" name="mi" placeholder="Middle Initial" maxlength="1" required>
+						
 						<input type="text" name="lastname" placeholder="Lastname" required>
 						<input type="text" name="address" placeholder="Address" style="width:430px;"required>
 						<input type="text" name="country" placeholder="Province" required>
-						<input type="text" name="zipcode" placeholder="ZIP Code" required maxlength="4">
-						<input type="text" name="mobile" placeholder="Mobile Number" maxlength="11">
+						<input type="text" name="zipcode" placeholder="ZIP Code"  maxlength="4">
+						<input type="text" name="mobile" placeholder="Mobile Number" required maxlength="11">
 						<input type="text" name="telephone" placeholder="Telephone Number" maxlength="8">
 						<input type="email" name="email" placeholder="Email" required>
 						<input type="password" name="password" placeholder="Password" required>
@@ -93,17 +93,21 @@
 	</div>
 
 	<div id="carousel">
-		<div id="myCarousel" class="carousel slide">
-			<div class="carousel-inner">
-				<div class="active item" style="padding:0; border-bottom:0 solid #111;"><img src="img/banner1.jpg" class="carousel"></div>
-				<div class="item" style="padding:0; border-bottom:0 solid #111;"><img src="img/banner2.jpg" class="carousel"></div>
-				<div class="item" style="padding:0; border-bottom:0 solid #111;"><img src="img/banner3.jpg" class="carousel"></div>
+			<div id="myCarousel" class="carousel slide">
+				<div class="carousel-inner">
+					<div class="active item" style="padding:0; border-bottom:0 solid #111;"><img src="img/banner1.jpg" class="carousel"></div>
+					<div class="item" style="padding:0; border-bottom:0 solid #111;"><img src="img/banner2.jpg" class="carousel"></div>
+					<div class="item" style="padding:0; border-bottom:0 solid #111;"><img src="img/banner3.jpg" class="carousel"></div>
+				</div>
+					<a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+					<a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
 			</div>
-				<a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
-				<a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
 		</div>
-	</div>
-
+	<div id="video">
+			<video controls autoplay width="445px" height="300px">
+				<source src="video/commercial.mp4" type="video/mp4">
+			</video>
+		</div>
 
 	
 
@@ -154,7 +158,7 @@
 	<br />
 	<div id="footer">
 		<div class="foot">
-			<label style="font-size:17px;"> Copyright &copy; </label>
+			<label style="font-size:17px;"><center> By Jeni Kadariya </center></label>
 			
 		</div>
 
