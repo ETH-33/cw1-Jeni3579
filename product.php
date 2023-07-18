@@ -27,7 +27,7 @@
 <body>
 	<div id="header">
 		<img src="img/logo.jpg">
-		<label>Online Shoe Store</label>
+		<label>Sports Wear</label>
 			<ul>
 				<li><a href="#signup"   data-toggle="modal">Sign Up</a></li>
 				<li><a href="#login"   data-toggle="modal">Login</a></li>
@@ -171,7 +171,7 @@
 	<br />
 	<div id="footer">
 		<div class="foot">
-			<label style="font-size:17px;"> Copyrght &copy; </label>
+			By Jeni kadariya
 			
 		</div>
 
