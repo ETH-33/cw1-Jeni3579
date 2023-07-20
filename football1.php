@@ -26,7 +26,7 @@
 <body>
 	<div id="header">
 		<img src="img/logo.jpg">
-		<label>Online Shoe Store</label>
+		<label>All in one</label>
 
 			<?php
 				$id = (int) $_SESSION['id'];
@@ -108,35 +108,36 @@
 
 		<div class="nav1">
 			<ul>
-				<li><a href="product1.php" class="active" style="color:#111;">Basketball</a></li>
+				<li><a href="product1.php">Basketball</a></li>
 				<li>|</li>
-				<li><a href="football1.php">Football</a></li>
+				<li><a href="football1.php" class="active" style="color:#111;">Football</a></li>
 				<li>|</li>
 				<li><a href="running1.php">Running</a></li>
 			</ul>
-				<?php echo "<a href='cart.php?id=".$id."&action=view'><button class='btn btn-inverse' style='right:1%; position:fixed; top:10%;'><i class='icon-shopping-cart icon-white'></i> View Cart</button></a>" ?>
+				<a href="cart.php"><button class="btn btn-inverse" style="right:1%; position:fixed; top:10%;"><i class="icon-shopping-cart icon-white"></i> View Cart</button></a>
 		</div>
 
 	<div id="content">
 		<br />
 		<br />
 		<div id="product">
-			<form method="post">
 
 			<?php
-				include ('function/addcart.php');
 
-				$query = $conn->query("SELECT *FROM product WHERE category='basketball' ORDER BY product_id DESC") or die (mysqli_error());
+				$query = $conn->query("SELECT *FROM product WHERE category='football' ORDER BY product_id DESC") or die (mysqli_error());
 
-					while($fetch = $query->fetch_array())
-						{
-
-						$pid = $fetch['product_id'];
-
-						$query1 = $conn->query("SELECT * FROM stock WHERE product_id = '$pid'") or die (mysqli_error());
-						$rows = $query1->fetch_array();
-
-						$qty = $rows['qty'];
+				while($fetch = $query->fetch_array())
+				{
+				
+				$pid = $fetch['product_id'];
+				
+				$query1 = $conn->query("SELECT * FROM stock WHERE product_id = '$pid'") or die (mysqli_error());
+				$rows = $query1->fetch_array();
+				
+				$qty = $rows['qty'];
+				
+				
+				
 						if($qty <= 5){
 
 						}else{
@@ -151,10 +152,9 @@
 							echo "</center>";
 							echo "</div>";
 						}
+
 						}
 			?>
-
-			</form>
 		</div>
 
 
@@ -167,7 +167,7 @@
 	<br />
 	<div id="footer">
 		<div class="foot">
-		<center> By Jeni KAdariya </center>
+		<center>By Jeni Kadariya </center>
 			
 		</div>
 
