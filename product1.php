@@ -108,7 +108,7 @@
 
 		<div class="nav1">
 			<ul>
-				<li><a href="product1.php" class="active" style="color:#111;">Basketball</a></li>
+				<li><a href="product1.php" class="active" style="color:red">Basketball</a></li>
 				<li>|</li>
 				<li><a href="football1.php">Football</a></li>
 				<li>|</li>

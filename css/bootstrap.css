@@ -226,8 +226,8 @@ body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 20px;
-  color: #333333;
-  background-color: #ffffff;
+  color: black;
+  background-color: black;
 }
 
 a {
@@ -724,7 +724,7 @@ h6 {
   font-family: inherit;
   font-weight: bold;
   line-height: 20px;
-  color: black;
+  color: grey;
   text-rendering: optimizelegibility;
 }
 
@@ -1021,7 +1021,7 @@ legend {
   margin-bottom: 20px;
   font-size: 21px;
   line-height: 40px;
-  color: #333333;
+  color: grey;
   border: 0;
   border-bottom: 1px solid #e5e5e5;
 }

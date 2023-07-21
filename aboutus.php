@@ -112,7 +112,7 @@
 	<br />
 	<div id="footer">
 		<div class="foot">
-			<label style="font-size:17px;"> Copyrght &copy; </label>
+			By Jeni kadariya
 			
 		</div>
 

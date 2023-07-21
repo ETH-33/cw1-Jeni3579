@@ -4,7 +4,7 @@
 	if (isset($_POST['signup']))
 {
 	$firstname=$_POST['firstname'];
-	$mi=$_POST['mi'];
+	
 	$lastname=$_POST['lastname'];
 	$address=$_POST['address'];
 	$country=$_POST['country'];
@@ -22,8 +22,8 @@
 			
 			else
 				{
-					$conn->query ("INSERT INTO customer (firstname, mi, lastname, address, country, zipcode, mobile, telephone, email, password)
-					VALUES ('$firstname', '$mi', '$lastname', '$address', '$country', '$zipcode', '$mobile', '$telephone', '$email', '$password')") 
+					$conn->query ("INSERT INTO customer (firstname, lastname, address, country, zipcode, mobile, telephone, email, password)
+					VALUES ('$firstname', '$lastname', '$address', '$country', '$zipcode', '$mobile', '$telephone', '$email', '$password')") 
 					or die(mysqli_error($conn));
 	
 				}				
