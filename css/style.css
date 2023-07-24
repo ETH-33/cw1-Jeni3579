@@ -26,7 +26,7 @@ body{
 	{
 		position:relative;
 		top:15px;
-		color:#fff;
+		color:black;
 		text-indent:80px;
 		font-size:30px;
 		clear:both;
@@ -50,12 +50,12 @@ body{
 #header ul li a
 	{
 		text-decoration:none;
-		color:#fff;
+		color:black;
 	}
 
 #header ul li a:hover
 	{
-		color:#25e;
+		color:white;
 	}
 
 #container
@@ -74,18 +74,18 @@ body{
 		font-size:15px;
 	}
 .nav ul li{
-		display:inline;
+		display:ruby-base-container;
 		position:relative;
 }
 .nav ul li a
 	{
 		text-decoration:none;
-		color:white;
+		color:grey;
 	}
 
 .nav ul li a:hover
 	{
-		color:#999;
+		color:grey;
 	}	
 #carousel
 	{
@@ -107,7 +107,7 @@ body{
 		float:right;
 		width:445px;
 		height:300px;
-		background-color:#111;
+		background-color:pink;
 	}
 	
 .profile
@@ -136,22 +136,18 @@ body{
 .nav1 ul li a
 	{
 		text-decoration:none;
-		color:red;
+		color:yellow;
 	}
 	
 .nav1 ul li a:hover
 	{
-		color:#111;
+		color:red;
 	}
 	
-/*.content
-	{
-	width:500px;
-	height:500px;	
-	}*/
+
 .login_title{
 	font-size: 26px;
-	color: #0099FF;
+	color: blue;
 	font-family: Impact, Charcoal, sans-serif;
 	border-bottom: dashed 1px #CCCCCC;
 	text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
@@ -189,7 +185,7 @@ body{
 	
 #product
 	{
-		position:relative;
+		position:center;
 		width:1150px;
 		height:auto;	
 	}
@@ -213,7 +209,7 @@ body{
 	
 #product img:hover
 	{
-		border:8px groove #ccc;
+		border:8px groove black;
 		width:280px;
 		height:210px;
 	}
@@ -228,7 +224,7 @@ body{
 #footer
 	{
 		position:center;
-		color:#fff;
+		color:grey;
 		width: 175%;
 		height: 100px;
 		clear:both;
@@ -260,7 +256,7 @@ body{
 	{
 		text-decoration:none;
 		display:block;
-		color:#fff;
+		color:brown;
 	}
 	
 #foot ul a li:hover
